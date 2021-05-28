@@ -63,3 +63,9 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`server running at http://${hostname}:${port}`);
 });
+
+// When to use node js => data streaming apps (never ending data on scrolling like facebooks), 
+// chat apps
+// Input Output Bound => non blocking io accepts multiple request from server/database/disk
+// this all happen by eventloop
+
